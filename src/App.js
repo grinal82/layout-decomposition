@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import NewsBlock from "./components/NewsBlock";
+import SearchInput from "./components/SearchInput";
+import Logo from "./components/Logo";
+import Banner from "./components/Banner";
+import InfoBlock from "./components/InfoBlock";
+import "./App.css";
+import {News} from  "./News";
+import { CardsData } from "./CardsData";
 
-function App() {
+
+let image = require('./assets/yandex_logo.png')
+let banner = require('./assets/banner.png')
+
+function App(data) {
+
+  const news = News
+  const cards = CardsData
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="wrapper">
+      <NewsBlock data={news} />
+      <Logo image={image}/>
+      <SearchInput placeholder = "Поиск Яндекса" />
+      <Banner banner={banner}/>
+      <InfoBlock 
+        cardsData={cards}
+      />
     </div>
+    </>
   );
 }
 

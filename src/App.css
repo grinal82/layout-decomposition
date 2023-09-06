@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  height: 100vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.globe {
+  color: rgb(16, 122, 243);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.news {
+  width: 100%;
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+
+}
+
+.news p {
+  margin-left: 10px;
+  /* margin-top: 0; */
+}
+
+.news a {
+  text-decoration: none;
+  color: black;
+  margin-top: -10px;
+}
+
+.searchbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+}
+
+.searchbar-container {
+  display: flex;
+  width: 80%;
+  position: relative;
+}
+
+.searchbar {
+  width: 60%;
+  height: 30px;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.searchbar::placeholder {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.searchtab {
+  width: 15%;
+  height: 36px;
+  padding-left: 15px;
+  background-color: rgb(248, 220, 109);
+  align-self: self-end;
+  position: relative;
+  clip-path: polygon(0% 0%, 50% 0%, 58.9% 45.3%, 50% 100%, 0% 100%, 0% 47.5%);
+}
+
+.searchtab p {
+  display: inline;
+  padding-top: 3px;
+  position: absolute;
+  top: -30%
+}
+
+.logo {
+  position: absolute;
+  top: 22vh;
+  left: -7vw;
+}
+
+.keyboard {
+  position: absolute;
+  font-size: 30px;
+  color: grey;
+  top: 40%;
+  left: 55%;
+}
+
+.banner {
+  margin-top: 20px;
+  width: 80%;
+  height: 170px;
+  align-self:self-start;
+}
+
+.infoblock-wrapper {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-self:self-start;
+  margin-top: 40px;
 }
