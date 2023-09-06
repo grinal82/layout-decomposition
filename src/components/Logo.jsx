@@ -1,6 +1,7 @@
 // Logo.js
 import React from 'react';
 
+/* renderes the logo/image received from props */
 function Logo(props) {
 
   return (

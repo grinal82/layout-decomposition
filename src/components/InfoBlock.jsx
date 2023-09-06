@@ -1,4 +1,4 @@
-// MainContent.jsx
+// InfoBlock.jsx
 import React from 'react';
 
 function InfoBlock(props) {

@@ -1,6 +1,10 @@
-// Navigation.jsx
+// Banner.jsx
 import React from 'react';
 
+
+/* re-usable component for banners, images that displays the image
+it recieves in the props by setting this image as inline style 'background-image'.
+*/
 function Banner(props) {
 
   return (

@@ -1,6 +1,9 @@
-// Header.jsx
 import React from 'react';
 
+
+/* 
+news block which renderes the news by 'mapping' through the props it receives and wrapping them down into a container.
+*/
 function NewsBlock (props) {
   return (
     <section className='news container'>

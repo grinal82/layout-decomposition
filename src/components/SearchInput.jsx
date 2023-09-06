@@ -1,6 +1,7 @@
 // SearchInput.jsx
 import React from 'react';
 
+/* simple component to render search input field */
 function SearchInput(props) {
   return (
     <>
